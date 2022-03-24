@@ -1,0 +1,66 @@
+/* Temp CSS to show structure of UI */
+body {
+	width: 300px;
+	height: 500px;
+	padding: 1px;
+	margin: 1px;
+	text-align: center;
+	background-color: #34cceb;
+}
+
+.modal-header {
+
+}
+
+.modal-content {
+	height: 350px;
+	width: 100%;
+	padding: 5px;
+}
+
+.modal-footer {
+
+}
+
+.logo {
+	font-family: Serif;
+}
+
+.logo-icon {
+	width: 75px;
+	height: 50px;
+}
+
+.exit-button {
+	float: left;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 12px
+}
+
+.add-button {
+	float: right;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 12px;
+}
+
+.menu-text {
+	font-family: Serif;
+}
+
+/* Design for basic control browser buttons added */
+.button1 {
+	border-radius: 12px;
+	float: left;
+	margin-left: 60px;
+}
+
+/* Design for custom macro buttons added */
+.button2 {
+	float: left;
+}
+
+.menu-text {
+	text-align: left;
+}
