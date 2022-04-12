@@ -31,6 +31,15 @@ body {
 	height: 50px;
 }
 
+.browser-control-buttons {
+	height: 50%;
+}
+
+.custom-macro-buttons {
+	height: 40%;
+	margin-top: -20px;
+}
+
 .exit-button {
 	float: left;
 	padding: 3px;
@@ -47,13 +56,13 @@ body {
 
 .menu-text {
 	font-family: Serif;
+	font-size: 17px;
 }
 
 /* Design for basic control browser buttons added */
 .button1 {
 	border-radius: 12px;
 	float: left;
-	margin-left: 60px;
 }
 
 /* Design for custom macro buttons added */
