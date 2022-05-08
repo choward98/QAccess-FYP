@@ -9,6 +9,7 @@
         <script src="../background/background.js" type="text/javascript"></script>
     </head>
     <body>
+        <!-- Header section of main UI, contianing Logo & Name of app -->
         <div class="main-view">
             <div class="modal-header">
                  <h1 class="logo">
@@ -16,26 +17,41 @@
                     <br>QAccess
                  </h1>
             </div>
+            <!-- Browser control UI section code below -->
             <div class="modal-content">
-                <p class="menu-text">Browser control options:</p>
                 <div class="browser-control-buttons">
+                    <p class="menu-text">Browser Remote Menu:</p>
                     <button type="button" class="button1" id=clickElement>Click Element</button>
-                    <button type="button" class="button1" id=scollDownAndUp>Input Text to element</button>
+                    <input type="text" name="clickElementInput" placeholder="enter id to click" id="clickElementInput"><br>
+                    <br>
+
+                    <button type="button" class="button1" id=searchPage>Search Page</button>
+                    <input type="text" name="searchPageInput" placeholder="enter id to search" id="searchPageInput"><br>
+                    <br>
+
                     <button type="button" class="button1" id=scrollUp>Scroll Up</button>
                     <button type="button" class="button1" id=scrollDown>Scroll Down</button>
+                    <br>
+                    <br>
+
                     <button type="button" class="button1" id=scrollTop>Scroll Top</button>
                     <button type="button" class="button1" id=scrollBottom>Scroll Bottom</button>
-                    <button type="button" class="button1" id=loadUrl>Load URL</button>
+                    <br>
+                    <br>
+
                     <button type="button" class="button1" id=pageRefresh>Refresh Page</button>
                     <button type="button" class="button1" id=goPreviousPage>Previous Page</button>
                     <button type="button" class="button1" id=goNextPage>Next Page</button>
                 </div>
                 <br>
                 <br>
+                <!-- Custom Macro UI section code below -->
                 <div class="custom-macro-buttons">
+                    <p class="menu-text">Custom Macro:</p>
                     <button type="button" class="button1" id=CustomMacroOne>Custom Macro</button>
                 </div>
             </div>
+            <!-- Bottom section of UI to contain static navigation/helper buttons -->
             <div class="modal-footer">
                 <button type="button" class="exit-button" id="exitApp">Exit</button>
                 <button type="button" class="exit-button" id="helpBtn">Help</button>
