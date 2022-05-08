@@ -9,6 +9,7 @@
         <script src="../background/background.js" type="text/javascript"></script>
     </head>
     <body>
+        <!-- Header section of main UI, contianing Logo & Name of app -->
         <div class="main-view">
             <div class="modal-header">
                  <h1 class="logo">
@@ -16,9 +17,10 @@
                     <br>QAccess
                  </h1>
             </div>
+            <!-- Browser control UI section code below -->
             <div class="modal-content">
                 <div class="browser-control-buttons">
-                    <p class="menu-text">Browser control options:</p>
+                    <p class="menu-text">Browser Remote Menu:</p>
                     <button type="button" class="button1" id=clickElement>Click Element</button>
                     <input type="text" name="clickElementInput" placeholder="enter id to click" id="clickElementInput"><br>
                     <br>
@@ -43,11 +45,13 @@
                 </div>
                 <br>
                 <br>
+                <!-- Custom Macro UI section code below -->
                 <div class="custom-macro-buttons">
-                    <p class="menu-text">Custom Macro Section:</p>
+                    <p class="menu-text">Custom Macro:</p>
                     <button type="button" class="button1" id=CustomMacroOne>Custom Macro</button>
                 </div>
             </div>
+            <!-- Bottom section of UI to contain static navigation/helper buttons -->
             <div class="modal-footer">
                 <button type="button" class="exit-button" id="exitApp">Exit</button>
                 <button type="button" class="exit-button" id="helpBtn">Help</button>

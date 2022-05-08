@@ -94,20 +94,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var customMacro = document.getElementById("CustomMacroOne")
     if (customMacro){
         customMacro.addEventListener("click", function(){
-            sendMessagetoContext("MacroOne")
+            
 
             chrome.storage.sync.get('actOne', function(response){
-                var actionOne = response
-                console.log(response); // Logged response from stored user session is working
+                var actionOne = response.actOne
+                console.log(actionOne); // Logged response from stored user session is working
+                sendMessagetoContext(actionOne.toString())
             });
             chrome.storage.sync.get('actTwo', function(response){
-                var actionTwo = response
-                console.log(response); // Logged response from stored user session is working
+                var actionTwo = response.actTwo
+                console.log(actionTwo); // Logged response from stored user session is working
+                sendMessagetoContext(actionTwo.toString())
             });
             chrome.storage.sync.get('actThree', function(response){
-                var actionThree = response
-                console.log(response); // Logged response from stored user session is working
-                // sendMessagetoContext(response.key)
+                var actionThree = response.actThree
+                console.log(actionThree); // Logged response from stored user session is working
+                sendMessagetoContext(actionThree.toString())
             });
         });
     }

@@ -3,14 +3,16 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
         //Figure out way to pass in dynamic element id to click on
     }
     else if (request.command == 'scrollDown'){
+        //Scroll down 500 pixels
         window.scrollBy(0, 500);
     }
     else if (request.command == 'scrollUp'){
+        //Scroll up 500 pixels
         window.scrollBy(0, -500);
     }
     else if (request.command == 'scrollTop'){
         //Scroll to top of the page, dynamically rendered based on page size
-        window.scrollY();
+        window.scrollTo(document.body.scrollHeight || document.documentElement.scrollHeight, 0);
     }
     else if (request.command == 'scrollBottom'){
         //Scroll to bottom of the page, dynamically rendered based on page size
